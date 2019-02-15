@@ -12,25 +12,25 @@ There may be case when some one needs the python code in the form of executable 
 
 ### To create the exe file please execute the below steps:
 <ul>
-  <li>Step 1: You have the python installed in your system. I am writing these steps with respect to windows. So please visit https://www.python.org/downloads/ to download the version of the python you want and install it. During installation, please install it in the custom location in c drive as well as please donot forget to add it to the path. Have a look at the screenshot.  
+  <li><strong>Step 1</strong>: You have the python installed in your system. I am writing these steps with respect to windows. So please visit https://www.python.org/downloads/ to download the version of the python you want and install it. During installation, please install it in the custom location in c drive as well as please donot forget to add it to the path. Have a look at the screenshot.  
 
 ![creating_exe_step1](https://user-images.githubusercontent.com/35392729/52865166-f8f67180-3161-11e9-874c-71a8dfdb2ecf.png) </li>
 
-<li> Step 2: Install cx_freeze  by using the below command.
+<li><strong>Step 2</strong>: Install cx_freeze  by using the below command.
   
   ```
   pip3 install cx_Freeze
   ```
   Execute the above command at <strong>C:\Python3.x\Scripts</strong> location in command prompt where x denotes the version of python which you have downloaded.</li>
   
-  <li>Step3: Install all the dependencies that you need to run your python script by using pip in the location C:\Python3.x\Scripts by exectuing the command in the command prompt.
+<li><strong>Step 3</strong>: Install all the dependencies that you need to run your python script by using pip in the location C:\Python3.x\Scripts by exectuing the command in the command prompt.
   
   ```
   pip3 install -r requirement.txt
   ```
   Please see the requirement.txt for this project in this repository.</li>
   
-<li>Step 4:Please create a file called setup.py and you have another file which is having your code. Please excetute the below commands in file setup.py
+<li><strong>Step 4</strong>:Please create a file called setup.py and you have another file which is having your code. Please excetute the below commands in file setup.py
   
   ```
   import sys
@@ -56,7 +56,7 @@ setup(
     )
  ```
  </li>
- <li> Step5: Please run the below command to create the exe file.
+ <li><strong>Step 5</strong>: Please run the below command to create the exe file.
   
   ```
   py -2 setup.py build
